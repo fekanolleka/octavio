@@ -33,7 +33,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-green-600 transition-colors"
                   >
-                    +58 422 3033333 (WhatsApp)
+                    +58 422 3033333 (Solo WhatsApp)
                   </a>
                 </div>
 
