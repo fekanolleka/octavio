@@ -8,7 +8,7 @@ function App() {
         <div className="bg-gray-100 p-8 border-b-4 border-gray-800">
           <div className="flex items-start gap-6">
             <img
-              src="https://media.discordapp.net/attachments/1378408614380699739/1437851168138334459/image.jpg?ex=6914bec0&is=69136d40&hm=d551a8665daf8227abcf7f20983760444284c0d997ec02b51de2745d4cdda49b&=&format=webp&width=390&height=581"
+              src="https://cdn.discordapp.com/avatars/1017257245421088818/0da750c34e095f6b3fe410783cc44e8b.png?size=4096"
               alt="Octavio Morales"
               className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
             />
@@ -34,6 +34,17 @@ function App() {
                     className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     +58 422 3033333 (Solo WhatsApp)
+                  </a>
+                </div>
+
+                {/* Llamadas */}
+                <div className="flex items-center gap-2">
+                  <Phone size={16} className="text-gray-600" />
+                  <a
+                    href="tel:+56948093720"
+                    className="text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    +56 948 093 720 (Llamadas)
                   </a>
                 </div>
 
@@ -137,7 +148,7 @@ function App() {
                 </div>
               </div>
             </section>
-          </div> {/* <-- cierre de la columna izquierda */}
+          </div>
 
           {/* Right Column */}
           <div className="p-8 bg-gray-50">
@@ -205,7 +216,7 @@ function App() {
                 </ul>
               </div>
             </section>
-          </div> {/* <-- cierre de la columna derecha */}
+          </div>
         </div>
 
         {/* Footer con fecha de actualización */}
