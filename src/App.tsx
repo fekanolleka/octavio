@@ -1,9 +1,24 @@
-import { Phone, Mail, MapPin, Instagram, Github } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Github, FileDown } from 'lucide-react';
 
 function App() {
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="max-w-4xl mx-auto bg-white shadow-lg">
+      <div className="max-w-4xl mx-auto bg-white shadow-lg relative">
+        {/* Botón para descargar/imprimir en PDF */}
+        <div className="absolute top-4 right-4 print:hidden">
+          <button
+            onClick={handlePrint}
+            className="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-md shadow hover:bg-gray-700 transition-colors"
+          >
+            <FileDown size={18} />
+            Descargar CV (PDF)
+          </button>
+        </div>
+
         {/* Header */}
         <div className="bg-gray-100 p-8 border-b-4 border-gray-800">
           <div className="flex items-start gap-6">
@@ -219,7 +234,7 @@ function App() {
           </div>
         </div>
 
-        {/* Footer con fecha de actualización */}
+        {/* Footer */}
         <div className="p-4 bg-gray-100 text-center text-sm text-gray-600 border-t border-gray-200">
           <p>Última actualización: 30/10/2025</p>
         </div>
